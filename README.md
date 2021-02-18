@@ -1,2 +1,2 @@
 # kattis
-Kattis solutions
+Kattis solutions in kotlin
