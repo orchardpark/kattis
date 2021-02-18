@@ -1,10 +1,10 @@
 class Matrix(val a: Int, val b: Int, val c: Int, val d: Int) {
 
-    fun determinant(): Int {
+    private fun determinant(): Int {
         return a*d-b*c;
     }
 
-    fun multiply(factor: Int): Matrix{
+    private fun multiply(factor: Int): Matrix{
         return Matrix(a*factor, b*factor, c*factor, d*factor)
     }
 
