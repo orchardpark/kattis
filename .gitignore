@@ -30,3 +30,6 @@ settings.gradle.kts
 gradle*
 
 src/test
+
+out/
+kattis.iml
