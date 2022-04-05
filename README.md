@@ -3,6 +3,7 @@ Solution for problems of the [Kattis](https://open.kattis.com/) Online Judge wri
 
 Solved problems
 * hello
+* autori
 * matrix
 * moneymatters
 * wffnproof
