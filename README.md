@@ -1,5 +1,5 @@
 # kattis
-Solution for problems of the [Kattis](https://open.kattis.com/) Online Judge written in the Kotlin programming language.
+Solution for problems of the [Kattis](https://open.kattis.com/) Online Judge.
 
 Solved problems
 * hello
@@ -7,3 +7,4 @@ Solved problems
 * matrix
 * moneymatters
 * wffnproof
+* 0-1 sequences
