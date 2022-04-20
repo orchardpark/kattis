@@ -8,3 +8,4 @@ Solved problems
 * moneymatters
 * wffnproof
 * 0-1 sequences
+* speedlimit
