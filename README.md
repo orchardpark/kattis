@@ -9,3 +9,4 @@ Solved problems
 * wffnproof
 * 0-1 sequences
 * speedlimit
+* quadrantselection
