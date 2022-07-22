@@ -10,3 +10,4 @@ Solved problems
 * 0-1 sequences
 * speedlimit
 * quadrantselection
+* watchdog
