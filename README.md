@@ -11,3 +11,4 @@ Solved problems
 * speedlimit
 * quadrantselection
 * watchdog
+* 3dprintedstatues
