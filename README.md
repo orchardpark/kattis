@@ -12,3 +12,4 @@ Solved problems
 * quadrantselection
 * watchdog
 * 3dprintedstatues
+* 2048
