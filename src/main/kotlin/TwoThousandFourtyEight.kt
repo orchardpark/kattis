@@ -50,14 +50,36 @@ fun moveTiles(matrix: Array<IntArray>, direction: Int): Array<IntArray> {
     var hasMoved = true
     while(hasMoved) {
         hasMoved =false
-        for (i in 0 until 4)
-            for (j in 0 until 4) {
-                if (cellMatrix[i][j].value==0 || i + dy < 0 || i + dy >= 4 || j + dx < 0 || j + dx >= 4) continue
+        for (k in 0 until 4)
+            for (l in 0 until 4) {
+                var i = 0
+                var j = 0
+                when (direction) {
+                    0 -> {
+                        i=k
+                        j=l
+                    }
+                    1 -> {
+                        i=k
+                        j=l
+                    }
+                    2 -> {
+                        j = 3-k
+                        i = l
+                    }
+                    3 -> {
+                        j = k
+                        i = 3-l
+                    }
+                }
+                if (i + dy < 0 || i + dy >= 4 || j + dx < 0 || j + dx >= 4 || cellMatrix[i][j].value==0) continue
                 if (cellMatrix[i + dy][j + dx].value == 0) {
                     cellMatrix[i + dy][j + dx] = cellMatrix[i][j].also { cellMatrix[i][j] = Cell(0, false) }
                     hasMoved = true
                 }
-                else if(cellMatrix[i + dy][j + dx].value == cellMatrix[i][j].value && !cellMatrix[i + dy][j + dx].hasMerged && !cellMatrix[i][j].hasMerged)
+                else if(cellMatrix[i + dy][j + dx].value <= 1024
+                    && cellMatrix[i + dy][j + dx].value == cellMatrix[i][j].value
+                    && !cellMatrix[i + dy][j + dx].hasMerged && !cellMatrix[i][j].hasMerged)
                 {
                     cellMatrix[i + dy][j + dx].value*=2
                     cellMatrix[i + dy][j + dx].hasMerged=true
