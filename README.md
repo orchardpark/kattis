@@ -14,3 +14,4 @@ Solved problems
 * 3dprintedstatues
 * 2048
 * twosum
+* findingana
