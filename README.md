@@ -15,3 +15,4 @@ Solved problems
 * 2048
 * twosum
 * findingana
+* fyi
